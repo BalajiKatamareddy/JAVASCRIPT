@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM METHODS</title>
+</head>
+<body>
+    <h1>Table by using Dom Method</h1>
+    <center>
+        <tr>
+            <th>Course Name</th>
+            <th>Course No</th>
+            <th>Course Fees</th>
+            <th>Course Place</th>
+        </tr>
+        <tbody border="2" cellpadding="1" id="td">
+            <td></td>
+        </tbody>
+        <script type="text/javascript">
+            let courses=
+            [
+                {
+                    'name':'HTML',
+                    'id':23423,
+                    'fees':250,
+                    'place':'Thub'
+                },
+                {
+                    'name':'CSS',
+                    'id':65687,
+                    'fees':300,
+                    'place':'Thub'
+                },
+                {
+                    'name':'JAVASCRIPT',
+                    'id':67845,
+                    'fees':350,
+                    'place':'Thub'
+                }
+            ]
+            for (let i = 0; i < courses.length; i++) 
+            {
+                document.getElementById('td'.document.write(courses[i].name));
+            }
+        </script>
+    </center>
+</body>
+</html>

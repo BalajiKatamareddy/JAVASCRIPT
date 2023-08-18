@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Document Object</h1>
+    <h2>The Query SelectorAll() Method</h2>
+    <p>Set the Background color of all h3,div,span tag elements</p>
+    <h1>A H1 element</h1>
+    <h2>A H2 element</h2>
+    <div>A div element</div>
+    <p>A paragraph element</p>
+    <p>A element with a <span style="color: brown;">span</span>element inside</p>
+    <script type="text/javascript">
+        const nodelist=document.querySelectorAll("h3, div, span");
+        for(let i=0;i<nodelist.length;i++)
+        {
+            nodelist[i].style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>

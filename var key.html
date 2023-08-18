@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js</title>
+</head>
+<body>
+   <h1>Java Script</h1>
+   <script type="text/javascript">
+   	  var n = [{
+   	  	 'name' : "Murali",
+   	  	 'rollno' : 2104,
+   	  	 'college' : 'AEC',
+   	  	 'branch' : 'CSE'
+   	  },
+   	  {
+   	  	 'name' : "Uday",
+   	  	 'rollno' : 2178,
+   	  	 'college' : 'AEC',
+   	  	 'branch' : 'ECE'
+   	  },
+   	  {
+   	  	 'name' : "Balaji",
+   	  	 'rollno' : 2145,
+   	  	 'college' : 'AEC',
+   	  	 'branch' : 'It'
+   	  },
+   	  {
+   	  	 'name' : "Kiran",
+   	  	 'rollno' : 2125,
+   	  	 'college' : 'ACOE',
+   	  	 'branch' : 'Aiml'
+   	  },
+   	  {
+   	  	 'name' : "Sai Krishna",
+   	  	 'rollno' : 2105,
+   	  	 'college' : 'ACET',
+   	  	 'branch' : 'iot'
+   	  }]
+
+      var key = 0;
+
+     for (var i =  0; i < n.length; i++) {    
+      for (key in n[i]) {
+				 document.write(n[i][key]+" ");
+			}
+			document.write("<br>")
+       }
+      
+
+	//document.write(n[i].name+" ",n[i].rollno+" ",n[i].college+" ",n[i].branch+"<br>");
+      
+   </script>
+</body>
+
+</html>
