@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>String Methods in Javascript</h1>
+        <table border="1" cellspacing="0">
+            <tr>
+                <td>d</td>
+                <td>r</td>
+                <td>i</td>
+                <td>v</td>
+                <td>e</td>
+                <td>&nbsp;</td>
+                <td>r</td>
+                <td>e</td>
+                <td>a</td>
+                <td>d</td>
+                <td>y</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>-11</td>
+                <td>-10</td>
+                <td>-9</td>
+                <td>-8</td>
+                <td>-7</td>
+                <td>-6</td>
+                <td>-5</td>
+                <td>-4</td>
+                <td>-3</td>
+                <td>-2</td>
+                <td>-1</td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            function getstr(str)
+            {
+                document.write("<b>"+str+"</br>")
+            }
+            let str="Drive Ready";
+            getstr("String="+str) //Drive Ready
+            getstr("String Length="+str.length) // 11
+            getstr("Char At="+str.charAt(4)) // e
+            getstr("Index Of="+str.indexOf('R')) //6
+            getstr("Index of 2nd Way="+str.indexOf('Ready')) //6
+            getstr("Last Index of the string="+str.lastIndexOf('d')) //9
+            let str1="SRK";
+            getstr(str1) //SRK
+            getstr("Lowercase="+str1.toLowerCase()) //srk
+            getstr("Uppercase="+str.toUpperCase()) //DRIVE READY
+            let str2=" Jawan";
+            getstr("Concante of the string="+str1.concat(str2)) //SRK Jawan
+            let username=' Balaji  Katamareddy '
+            getstr("trim() method="+username.trim())//Removing spaces from left side and right side
+            let name="SRK&ATLEE,VIJAY";
+            console.log(name.split("&"));//['SRK','ATLEE,VIJAY']
+            console.log(name.split(","));//['SRK&ATLEE,VIJAY']
+            let name1="VENKATA BALAJI";
+            console.log(name1.startsWith('B'));//false
+            //slice method
+            getstr("slice of the String="+name1.slice(1,4))
+            getstr("slice of the string="+name1.slice(-3,-2))
+        </script>
+    </center>
+</body>
+</html>
